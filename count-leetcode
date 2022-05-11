@@ -1,0 +1,14 @@
+class Solution:
+    def countPrimes(self, n: int) -> int:
+        count=0
+        for no in range(n):
+            if n<=1:
+                continue
+            for i in range(2,no):
+                if n%i==0:
+                    break
+                else:
+                    count += 1
+        return count
+print(countPrimes())
+        
